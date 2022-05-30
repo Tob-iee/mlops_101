@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nwoke/Documents/git_cloned/Github/mlops_101/week2/mlruns/0/0c92c88db3b2409186307269de3122ed/artifacts
+end_time: 1653673965761
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 0c92c88db3b2409186307269de3122ed
+run_uuid: 0c92c88db3b2409186307269de3122ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1653673939020
+status: 3
+tags: []
+user_id: nwoke
