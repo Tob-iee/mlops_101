@@ -112,12 +112,13 @@ def main(date="2021-08-15"):
 
     if date == None:
         # save dictvectorizer and datasets
-        pickle.dump(dv, open(f"dv-{datetime.today()}.pkl", 'wb'))
-        pickle.dump(lr, open(f"model-{datetime.today()}.pkl", 'wb'))
+        pickle.dump(dv, open(f"{modelpath}/dv-{datetime.today()}.pkl", 'wb'))
+        pickle.dump(lr, open(f"{modelpath}/model-{datetime.today()}.pkl", 'wb'))
     else:
         # save dictvectorizer and datasets
-        pickle.dump(dv, open(f"dv-{date}.pkl", 'wb'))
-        pickle.dump(lr, open(f"model-{date}.pkl", 'wb'))
+        pickle.dump(dv, open(f"{modelpath}/dv-{date}.pkl", 'wb'))
+        pickle.dump(lr, open(f"{modelpath}model-{date}.pkl", 'wb'))
+
 
 
 from prefect.deployments import DeploymentSpec
