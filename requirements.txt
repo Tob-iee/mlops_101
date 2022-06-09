@@ -7,4 +7,5 @@ hyperopt
 xgboost
 fastparquet
 boto3
-protobuf==3.20.1 
+protobuf==3.20.1
+prefect==2.0b5
