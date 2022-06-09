@@ -108,7 +108,7 @@ def main(date="2021-08-15"):
     lr, dv = train_model(df_train_processed, categorical).result()
     run_model(df_val_processed, categorical, dv, lr)
 
-    modelpath = "./week3/model/"
+    modelpath = "./week3/src/model/"
 
     if date == None:
         # save dictvectorizer and datasets
@@ -117,7 +117,7 @@ def main(date="2021-08-15"):
     else:
         # save dictvectorizer and datasets
         pickle.dump(dv, open(f"{modelpath}/dv-{date}.pkl", 'wb'))
-        pickle.dump(lr, open(f"{modelpath}model-{date}.pkl", 'wb'))
+        pickle.dump(lr, open(f"{modelpath}/model-{date}.pkl", 'wb'))
 
 
 
