@@ -13,4 +13,4 @@ COPY [ "infer.py", "model.bin", "./" ]
 
 COPY output /app/output
 
-CMD python infer.py fhv 2021 4 model.bin
+CMD python infer.py fhv 2021 4 model.bin mlflow-artifacts-remote-mlops-101
