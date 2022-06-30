@@ -1,4 +1,3 @@
-
 from fileinput import filename
 import os
 import pathlib
@@ -76,7 +75,7 @@ def upload_predictions_to_s3(bucket_target, output_file):
     object_name = "output/"+output_file
     file_name = f"output/{output_file}"
     # s3.put_object(Bucket=bucket_target, Key=f"output")
-    
+
     print("s3 upload Uploading .....")
     response = s3.upload_file(file_name, bucket_target, object_name)
     print("Done!!!")  # prints None

@@ -10,8 +10,11 @@ fastparquet = "*"
 pyarrow = "*"
 boto3 = "*"
 awscli = "*"
+prefect = "==2.0b5"
+s3fs = "*"
 
 [dev-packages]
+ipykernel = "*"
 
 [requires]
 python_version = "3.9"
