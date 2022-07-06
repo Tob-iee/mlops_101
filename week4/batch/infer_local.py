@@ -102,4 +102,10 @@ def run():
         bucket_target)
 
 if __name__ == '__main__':
-    run()
+    # run()
+    taxi = "fhv" # "fhv"
+    year = 2021 # 2021
+    month = 2 #2
+    df = read_data(f'https://nyc-tlc.s3.amazonaws.com/trip+data/{taxi}_tripdata_{year:04d}-{month:02d}.parquet', year, month)
+    df.columns()
+https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-04.parquet
