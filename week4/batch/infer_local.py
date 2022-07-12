@@ -106,6 +106,8 @@ if __name__ == '__main__':
     taxi = "fhv" # "fhv"
     year = 2021 # 2021
     month = 2 #2
-    df = read_data(f'https://nyc-tlc.s3.amazonaws.com/trip+data/{taxi}_tripdata_{year:04d}-{month:02d}.parquet', year, month)
+    df = read_data(f'https://s3.amazonaws.com/nyc-tlc/trip+data/green_tripdata_2021-01.parquet', year, month)
     df.columns()
-https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-04.parquet
+# https://s3.amazonaws.com/nyc-tlc/trip+data/green_tripdata_2021-01.parquet
+
+# https://s3.amazonaws.com/nyc-tlc/trip-data/green_tripdata_2021-01.parquet

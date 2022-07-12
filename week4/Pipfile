@@ -12,6 +12,9 @@ boto3 = "*"
 awscli = "*"
 prefect = "==2.0b5"
 s3fs = "*"
+mlflow = "*"
+flask = "*"
+gunicorn = "*"
 
 [dev-packages]
 ipykernel = "*"
