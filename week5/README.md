@@ -130,8 +130,8 @@ docker run -it --rm \
 
 To use AWS CLI, you may need to set the env variables:
 
-export AWS_ACCESS_KEY_ID=AKIA37RTBBW6RA7EYTOR
-export AWS_SECRET_ACCESS_KEY=AYhXayXyh7BWicIvHhxmK7eIXNGUoMnqvBsfMluh
+export AWS_ACCESS_KEY_ID="your AWS_ACCESS_KEY_ID"
+export AWS_SECRET_ACCESS_KEY= "your AWS_SECRET_ACCESS_KEY"
 export AWS_DEFAULT_REGION=us-east-1
 
 ```bash
