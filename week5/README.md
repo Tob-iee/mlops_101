@@ -122,19 +122,23 @@ docker build -t stream-model-duration:v1 .
 docker run -it --rm \
     -p 8080:8080 \
     -e PREDICTIONS_STREAM_NAME="ride_predictions" \
-    -e RUN_ID="e1efc53e9bd149078b0c12aeaa6365df" \
+    -e RUN_ID="8c01d893d5b0439e9b1d48cafbb2d96b" \
     -e TEST_RUN="True" \
-    -e AWS_DEFAULT_REGION="eu-west-1" \
+    -e AWS_DEFAULT_REGION="us-east-1" \
     stream-model-duration:v1
 ```
 
 To use AWS CLI, you may need to set the env variables:
 
+export AWS_ACCESS_KEY_ID=AKIA37RTBBW6RA7EYTOR
+export AWS_SECRET_ACCESS_KEY=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
+export AWS_DEFAULT_REGION=us-east-1
+
 ```bash
 docker run -it --rm \
     -p 8080:8080 \
     -e PREDICTIONS_STREAM_NAME="ride_predictions" \
-    -e RUN_ID="e1efc53e9bd149078b0c12aeaa6365df" \
+    -e RUN_ID="8c01d893d5b0439e9b1d48cafbb2d96b" \
     -e TEST_RUN="True" \
     -e AWS_ACCESS_KEY_ID="${AWS_ACCESS_KEY_ID}" \
     -e AWS_SECRET_ACCESS_KEY="${AWS_SECRET_ACCESS_KEY}" \
@@ -148,7 +152,7 @@ Alternatively, you can mount the `.aws` folder with your credentials to the `.aw
 docker run -it --rm \
     -p 8080:8080 \
     -e PREDICTIONS_STREAM_NAME="ride_predictions" \
-    -e RUN_ID="e1efc53e9bd149078b0c12aeaa6365df" \
+    -e RUN_ID="8c01d893d5b0439e9b1d48cafbb2d96b" \
     -e TEST_RUN="True" \
     -v c:/Users/alexe/.aws:/root/.aws \
     stream-model-duration:v1
@@ -174,7 +178,7 @@ $(aws ecr get-login --no-include-email)
 Pushing
 
 ```bash
-REMOTE_URI="387546586013.dkr.ecr.eu-west-1.amazonaws.com/duration-model"
+REMOTE_URI="823667002813.dkr.ecr.us-east-1.amazonaws.com/duration-model"
 REMOTE_TAG="v1"
 REMOTE_IMAGE=${REMOTE_URI}:${REMOTE_TAG}
 
